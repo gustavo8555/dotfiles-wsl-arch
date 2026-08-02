@@ -1,0 +1,20 @@
+# ~/.zshrc — reconstruido a partir do setup WSL2 + Arch
+# OBS: isso e uma reconstrucao baseada nos comandos que rodamos juntos.
+# Rode `cat ~/.zshrc` na sua maquina e compare/ajuste antes de sobrescrever.
+
+# Starship prompt
+eval "$(starship init zsh)"
+
+# NVM (Node.js)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# pyenv (Python)
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# Aliases uteis
+alias ll='ls -la'
+alias gs='git status'

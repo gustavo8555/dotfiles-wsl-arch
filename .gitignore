@@ -1,0 +1,7 @@
+# Nunca versionar credenciais, cache ou dados locais
+.sf/
+.npm/
+.cache/
+.zcompdump
+node_modules/
+*.log
